@@ -15,5 +15,6 @@ dependencies {
 }
 
 test {
+    println ("Tets msg from build.gradle: Testing started")
     useTestNG()
 }
