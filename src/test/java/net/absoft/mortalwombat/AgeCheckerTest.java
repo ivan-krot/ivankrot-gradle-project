@@ -9,6 +9,8 @@ public class AgeCheckerTest {
     public void testUserAge() {
         AgeChecker ageChecker = new AgeChecker();
         Assert.assertTrue(ageChecker.isAgeCorrect(18), "User is too young !");
+        ageChecker.setMinAge(13);
+        Assert.assertTrue(ageChecker.isAgeCorrect(18), "User is too young !");
     }
 
     @Test
